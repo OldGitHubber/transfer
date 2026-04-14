@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Path to resources will be the same as the path this page was requested from as it is a same origin request -->
+  <!-- i.e. http://localhost:3000 and the static routes on the server will be scanned for the files -->
+
+  <link rel="stylesheet" href="results.css">
+  <script src="results.js" defer></script>
+  <title>Results</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Search for student results</h1>
+    <select id="ddSearchType">
+      <option value="" disabled selected>Search type</option>
+      <option value="lName">Last Name</option>
+      <option value="id">ID</option>
+      <option value="all">All Results</option>
+    </select>
+
+    <input type="text" id="searchText" disabled >
+    <div id="displayResult"></div>
+  </div>
+</body>
+
+
+</html>
