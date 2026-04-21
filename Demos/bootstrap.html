@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Demo</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <!-- Can override bootstrap - or roll your own for elements you don't like -->
+  <style>
+    .btn-primary {
+      background-color: orange;
+      margin: auto;
+    }
+
+    .small {
+      width: 400px;
+      box-shadow: 8px 8px 6px grey;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation bar with links down to medium then hamburger. Style the semantic nav element -->
+  <!-- navbar styles nav element into a navbar with hamburger. navbar-expand-md will collapse links into hamburger -->
+  <!-- navbar-dark set text colour for dark backgrounds bg-dark dark background for navbar -->
+  <!-- mb is margin bottom use-mb1-5 -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <!-- Container - style navbar content. Centers content and adds horizontal padding. Prevents the navbar from stretching edge‑to‑edge.-->
+    <div class="container">
+      <a class="navbar-brand" href="#">Bootstrap Demo</a> <!-- Style the title or brand name link if you want one -->
+
+      <!-- Hamburger button (only visible on small screens) -->
+      <!-- navbar-toggler styles the hamburger button for small screens -->
+      <!-- data-bs-toggle="collapse" open or close hamburger menu -->
+      <!-- data-bs-target="#mainNav" Link the hamburger to the nav links div where id=mainNav -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span> <!-- the hamburger icon -->
+      </button>
+
+      <!-- Collapsible area containing the nav links -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <!-- navbar-nav make ul horiz (remove then style="color:white" to show it) ms-auto move links right -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"> <!-- nav-item links each li to the nav bar i.e. it is a nav item -->
+            <!-- Add link to the li. nav-link style the link (padding, hover etc). active highlights this one -->
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main body style. container creates fixed width responsive wrapper for page content -->
+  <div class="container">
+
+    <!-- Grid Example for putting text or whatever in columns in 1/12 ths col-md-(n*1/12) -->
+    <div class="row mb-4 g-3"> <!-- create a row with margin bottom and gutter spaces on wrapping -->
+      <div class="col-md-6">
+        <div class="p-3 bg-light border">Lewis is a seven times world champion equalled only by Michael Schumacher. For
+          many, he has
+          won eight titles as the final race in Abu Dhabi was at worst, fixed, or at best, incompetence on the part of
+          Michael Masi, the
+          race director; it cost him his job and cost Lewis his eighth title.
+          He holds the record for the most Formula 1 Grand Prix wins, standing at 105.
+          He started his career with McLaren in 2007, moved to Mercedes and now unfortunately drives for Ferrari as of
+          this year, 2026.</div> <!-- padding 3, light background with border -->
+      </div>
+      <div class="col-md-6">
+        <div class="p-3 bg-light border">Lewis is a seven times world champion equalled only by Michael Schumacher. For
+          many, he has won eight titles as the final race in Abu Dhabi was at worst, fixed, or at best, incompetence on the part of
+          Michael Masi, the race director; it cost him his job and cost Lewis his eighth title.
+          He holds the record for the most Formula 1 Grand Prix wins, standing at 105.
+          He started his career with McLaren in 2007, moved to Mercedes and now unfortunately drives for Ferrari as of
+          this year, 2026.</div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-3 bg-light border">Lewis is a seven times world champion equalled only by Michael Schumacher. For
+          many, he has
+          won eight titles as the final race in Abu Dhabi was at worst, fixed, or at best, incompetence on the part of
+          Michael Masi, the
+          race director; it cost him his job and cost Lewis his eighth title.
+          He holds the record for the most Formula 1 Grand Prix wins, standing at 105.
+          He started his career with McLaren in 2007, moved to Mercedes and now unfortunately drives for Ferrari as of
+          this year, 2026.</div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-3 bg-light border">Lando started with McLaren in 2019 and got his first win in 2024 and has won 8
+          times since. He was runner-up for the 2024 world title
+          and is fighting again for his first world championship title this year.</div>
+      </div>
+
+    </div>
+
+
+    <!-- Card Example i.e. like the F1 photos and text-->
+    <div class="card mb-4"> <!-- format the div into a card style -->
+      <div class="card-header">Card Header</div> <!-- grey background and padding -->
+      <div class="card-body"> <!-- Pad and position card body -->
+        <h5 class="card-title">A Bootstrap Card</h5>
+        <p class="card-text">
+          This is a simple card showing Bootstrap’s default styling.
+        </p>
+        <a href="#" class="btn btn-primary">Press Me</a>
+      </div>
+    </div>
+
+    <div class="card mb-4"> <!-- format the div into a card style -->
+      <div class="card-header">Most Successful F1 Driver Ever (GOAT)</div> <!-- grey background and padding -->
+      <div class="card-img-top p-3 text-center">
+        <img src="Lewis Hamilton.jpg" class="img-fluid rounded-4 small" alt="...">
+      </div>
+      <div class="card-body"> <!-- Pad and position card body -->
+        <h5 class="card-title">Lewis Hamilton</h5>
+        <p class="card-text">
+          Lewis is a seven times world champion equalled only by Michael Schumacher. For many, he has
+          won eight titles as the final race in Abu Dhabi was at worst, fixed, or at best, incompetence on the part of
+          Michael Masi, the
+          race director; it cost him his job and cost Lewis his eighth title.
+          He holds the record for the most Formula 1 Grand Prix wins, standing at 105.
+          He started his career with McLaren in 2007, moved to Mercedes and now unfortunately drives for Ferrari as of
+          this year, 2026.
+        </p>
+        <a href="#" class="btn btn-primary">Press Me</a>
+      </div>
+    </div>
+
+    <!-- There are various button styles -->
+    <button class="btn btn-success me-2">Success</button> <!-- me is margin end. Push next button right a bit -->
+    <button class="btn btn-danger">Danger</button>
+
+  </div>
+
+</body>
+
+</html>
