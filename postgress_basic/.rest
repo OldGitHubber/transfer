@@ -1,0 +1,19 @@
+###
+GET http://localhost:4000/create-table
+
+###
+GET http://localhost:4000/people
+
+
+###
+POST http://localhost:4000/people
+Content-Type: application/json
+
+{
+  "first_name": "Bill",
+  "last_name": "Smith",
+  "age": 20
+}
+
+### Drop the table
+DELETE http://localhost:4000/people
